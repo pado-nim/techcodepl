@@ -1,0 +1,148 @@
+.teamsection{
+  margin-top: 100vh; /* Dostosuj wartość według potrzeb */
+}
+
+.offer-title{
+  color: black;
+}
+.offersection{
+  color: white;
+  height: 100vh;
+  background: url('../../assets/bg3.png')
+}
+
+.bg-green{
+  background: rgba(45, 54, 46, 0.75);
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+/* Stylizacja wszystkich linków zakładek */
+#tab-custom .nav-item .nav-link {
+  color: hsla(160, 100%, 37%, 1) !important;
+}
+
+/* Stylizacja aktywnej zakładki */
+#tab-custom .nav-item .nav-link.active,
+#tab-custom .nav-item.show .nav-link {
+  color: hsla(160, 100%, 37%, 1) !important;
+}
+
+#tab-custom{
+  color: hsla(160, 100%, 37%, 1) !important;
+}
+
+.border-bottom{
+  border-bottom: 2px solid grey;
+}
+
+
+.card {
+  margin: 5px; /* Zmniejszenie marginesu karty */
+}
+
+.card-background {
+  border: none !important;
+}
+
+.card-background .card-body {
+  background-image: url('../../assets/box2.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.card-img-right{
+  overflow: hidden;
+  position: relative;
+  left: 45%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Odstęp między ikonami */
+}
+
+.social-icons a {
+  color: #fff; /* Kolor ikon */
+  font-size: 16px;
+}
+
+.bg-button
+{
+  background-image: url('../../assets/button.png');
+  background-size: cover;
+  color: white;
+  width: 380px;
+  height: 120px;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.teaminvite button:hover {
+  opacity: 0.9;
+}
+
+.social-icons a:hover{
+  animation: shake 0.5s;
+}
+
+iframe{
+  border: 4px solid #43d850;
+  width: 720px;
+  height: 480px;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+}
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media (max-width: 430px) {
+  .films-content{
+    margin-top: 100vh;
+  }
+}
+
+@media (max-height: 430px) {
+  .films-content, .offersection, #offer{
+    height: 100vh;
+  }
+  .films-content, .offersection {
+    margin-top: 120vh;
+  }
+  #offer{
+    margin-top: 120vh;
+    height: 100vh !important;
+    overflow: hidden;
+  }
+}
